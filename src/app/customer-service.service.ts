@@ -10,7 +10,7 @@ export class CustomerServiceService {
   constructor(private http: HttpClient) { }
 
   SaveData(data) {
-    return this.http.post(`${this.baseUrl}/Issue`, data)
+    return this.http.post(`${this.baseUrl}/SaveCustomers`, data)
 }
 
 

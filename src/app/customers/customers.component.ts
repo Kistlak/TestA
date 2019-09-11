@@ -20,7 +20,7 @@ public error = null;
 
   constructor(
     private router: Router,
-    private CustomerServiceService:CustomerServiceService
+    private CustomerServiceService: CustomerServiceService
   ) { }
 
   ngOnInit() {
@@ -40,7 +40,7 @@ public error = null;
   }
 
 handleResponse(data) {
-  this.router.navigateByUrl('/Issue');
+  console.log(data);
 }
 
 handleError(error) {
